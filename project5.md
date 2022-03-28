@@ -28,7 +28,7 @@
 	` sudo apt install mysql-server`
 	`sudo status mysql`
 
-![MySQL server active](./Project-5/images/mysql-server-active.jpg)
+![MySQL server active](onyeka-workspace/Project-5/images/mysql-server-active.jpg)
 
 ## On the mysql client redhat server install mysql client software with the following commands:
 
