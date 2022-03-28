@@ -60,7 +60,7 @@
 
 	`select user,host from mysql.user;`
 
-![list-user-mysql-server](https://user-images.githubusercontent.com/83009045/160478961-3ec91b73-5373-4264-8c16-d6449e379264.JPG
+![list-user-mysql-server](https://user-images.githubusercontent.com/83009045/160478961-3ec91b73-5373-4264-8c16-d6449e379264.JPG)
 
 #### I am connected as a root user because of the sudo privileges
 
@@ -96,6 +96,7 @@
 
 	`SHOW DATABASES;
 
-![show-database](https://user-images.githubusercontent.com/83009045/160479306-532b71f5-e419-4b2c-840b-7170bf84e44a.
+![show-database](https://user-images.githubusercontent.com/83009045/160479666-265cad2d-960e-498a-ac22-88a5ef3864d4.JPG)
+
 
 ## End of project 5
