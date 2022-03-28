@@ -28,7 +28,8 @@
 	` sudo apt install mysql-server`
 	`sudo status mysql`
 
-![MySQL server active](C:\Users\HP\Documents/onyeka-workspace/Project-5/images/mysql-server-active.jpg)
+![mysql-server-active](https://user-images.githubusercontent.com/83009045/160478610-16effbd8-a067-4b37-8b0d-4a8ff705992e.JPG)
+
 
 ## On the mysql client redhat server install mysql client software with the following commands:
 
@@ -59,8 +60,7 @@
 
 	`select user,host from mysql.user;`
 
-
-![list of users in mysql server](./Project-5/images/list-user-mysql-server.jpg)
+![list-user-mysql-server](https://user-images.githubusercontent.com/83009045/160478961-3ec91b73-5373-4264-8c16-d6449e379264.JPG
 
 #### I am connected as a root user because of the sudo privileges
 
@@ -74,9 +74,7 @@
 
 	`select user,host from mysql.user;`
 
-
-![list of users in mysql server2](./Project-5/images/new-user.jpg)
-
+![new-user](https://user-images.githubusercontent.com/83009045/160479144-22bb03f3-2228-456e-b333-1b81b97ad6b9.JPG)
 
 
 ### From mysql client connect remotely to mysql server Database Engine without using SSH. You must use the mysql utility to perform this action.
@@ -94,13 +92,10 @@
 
 	`select user,host from mysql.user;`
 
-![list of users in mysql server3](./Project-5/images/users-from-client.jpg)
+![users-from-client](https://user-images.githubusercontent.com/83009045/160479248-ca117bce-b382-4448-8fe6-3ea2c694bd7f.JPG)
 
 	`SHOW DATABASES;
 
-![database](./Project-5/images/show-database.jpg)
+![show-database](https://user-images.githubusercontent.com/83009045/160479306-532b71f5-e419-4b2c-840b-7170bf84e44a.
 
 ## End of project 5
-
-![mysql-server-active](https://user-images.githubusercontent.com/83009045/160440572-383f9f70-93bb-4892-8349-8b69edcfc13c.JPG)
-
