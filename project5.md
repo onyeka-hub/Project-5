@@ -37,46 +37,46 @@ On mysql server Linux Server install mysql Server software with the following co
 
 ![MySQL server active](https://github.com/onyeka-hub/Project-5/blob/main/images/mysql-server-active.JPG)
 
-## On the mysql client redhat server install mysql client software with the following commands:
+On the mysql client redhat server install mysql client software with the following commands:
 
 	`sudo yum update`
 
 	`sudo yum install mysql`
 
-#### By default, both of your EC2 virtual servers are located in the same local virtual network, so they can communicate to each other using local IP addresses.
+By default, both of your EC2 virtual servers are located in the same local virtual network, so they can communicate to each other using local IP addresses.
 
-#### Use mysql server's local IP address to connect from mysql client.
+Use mysql server's local IP address to connect from mysql client.
 
-#### MySQL server uses TCP port 3306 by default, so you will have to open it by creating a new entry in ‘Inbound rules’ in ‘mysql server’ Security Groups.
+MySQL server uses TCP port 3306 by default, so you will have to open it by creating a new entry in ‘Inbound rules’ in ‘mysql server’ Security Groups.
 
-#### For extra security, do not allow all IP addresses to reach your ‘mysql server’ – allow access only to the specific local IP address of your ‘mysql client’.
+For extra security, do not allow all IP addresses to reach your ‘mysql server’ – allow access only to the specific local IP address of your ‘mysql client’.
 
-#### Get the private ip address of the mysql client from the command line by running this command:
+Get the private ip address of the mysql client from the command line by running this command:
 
 	`hostname -i`
 
-#### Go to the security groug of mysql server and open port 3306 to the private ip address of the mysql client
+Go to the security groug of mysql server and open port 3306 to the private ip address of the mysql client
 
-#### You might need to configure mysql server to allow connections from remote hosts.
+You might need to configure mysql server to allow connections from remote hosts.
 
-#### Change the Bind address from 127.0.0.1 to 0.0.0.0 so that it can connect from anywhere
+Change the Bind address from 127.0.0.1 to 0.0.0.0 so that it can connect from anywhere
 
 	`sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
 
-#### We need to create a new user in the mysql server which will be used to connect to this server from mysql client
+We need to create a new user in the mysql server which will be used to connect to this server from mysql client
  
-#### Check the list of the users currently in the mysql server database with the command below
+Check the list of the users currently in the mysql server database with the command below
 
 	`sudo mysql`
 
 	`select user,host from mysql.user;`
 
 
-![list of users in mysql server](./images/list-user-mysql-server.jpg)
+![list of users in mysql server](https://github.com/onyeka-hub/Project-5/blob/main/images/list-user-mysql-server.JPG)
 
-#### I am connected as a root user because of the sudo privileges
+I am connected as a root user because of the sudo privileges
 
-### Create the new user and grant him privileges with the commands below :
+Create the new user and grant him privileges with the commands below :
 
 	`CREATE USER 'onyeka'@'%' IDENTIFIED BY 'onyeka12345';
 
@@ -87,7 +87,7 @@ On mysql server Linux Server install mysql Server software with the following co
 	`select user,host from mysql.user;`
 
 
-![list of users in mysql server2](./Project-5/images/new-user.jpg)
+![list of users in mysql server2][(./Project-5/images/new-user.jpg)](https://github.com/onyeka-hub/Project-5/blob/main/images/new-user.JPG)
 
 
 
