@@ -72,7 +72,7 @@ On mysql server Linux Server install mysql Server software with the following co
 	`select user,host from mysql.user;`
 
 
-![list of users in mysql server](./Project-5/images/list-user-mysql-server.jpg)
+![list of users in mysql server](./images/list-user-mysql-server.jpg)
 
 #### I am connected as a root user because of the sudo privileges
 
