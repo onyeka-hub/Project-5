@@ -87,15 +87,14 @@ Create the new user and grant him privileges with the commands below :
 	`select user,host from mysql.user;`
 
 
-![list of users in mysql server2][(./Project-5/images/new-user.jpg)](https://github.com/onyeka-hub/Project-5/blob/main/images/new-user.JPG)
+![list of users in mysql server](https://github.com/onyeka-hub/Project-5/blob/main/images/new-user.JPG)
 
 
+From mysql client connect remotely to mysql server Database Engine without using SSH. You must use the mysql utility to perform this action.
 
-### From mysql client connect remotely to mysql server Database Engine without using SSH. You must use the mysql utility to perform this action.
+Copy the private ip address of the mysql server and log into the redhat mysql client terminal
 
-#### Copy the private ip address of the mysql server and log into the redhat mysql client terminal
-
-#### Do the following command to connect to the mysql server through mysql client:
+Do the following command to connect to the mysql server through mysql client:
 
 	`mysql -h <private-ip-address-of-the-server> -u onyeka -p`
 
@@ -105,15 +104,15 @@ Create the new user and grant him privileges with the commands below :
 
 	> -p is to ask you for the password
 
-#### To confirm , run the command below
+To confirm , run the command below
 
 	`select user,host from mysql.user;`
 
-![list of users in mysql server3](./Project-5/images/users-from-client.jpg)
+![list of users in mysql server](https://github.com/onyeka-hub/Project-5/blob/main/images/users-from-client.JPG)
 
 	`SHOW DATABASES;
 
-![database](./Project-5/images/show-database.jpg)
+![database](https://github.com/onyeka-hub/Project-5/blob/main/images/show-database.JPG)
 
 ## End of project 5
 
