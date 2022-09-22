@@ -35,7 +35,7 @@ On mysql server Linux Server install mysql Server software with the following co
 
 	`sudo status mysql`
 
-![MySQL server active](./images/mysql-server-active.jpg)
+![MySQL server active](https://github.com/onyeka-hub/Project-5/blob/main/images/mysql-server-active.JPG)
 
 ## On the mysql client redhat server install mysql client software with the following commands:
 
