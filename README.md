@@ -27,9 +27,9 @@ On mysql server Linux Server install mysql Server software with the following co
 ```
 sudo apt update
 
-sudo apt install mysql-server
+sudo apt install mysql-server -y
 
-sudo status mysql
+sudo systemctl status mysql
 ```
 
 ![MySQL server active](https://github.com/onyeka-hub/Project-5/blob/main/images/mysql-server-active.JPG)
@@ -39,7 +39,7 @@ On the mysql client redhat server install mysql client software with the followi
 ```
 sudo yum update
 
-sudo yum install mysql
+sudo yum install mysql -y
 ```
 
 By default, both of your EC2 virtual servers are located in the same local virtual network, so they can communicate to each other using local IP addresses.
@@ -64,6 +64,8 @@ Change the Bind address from 127.0.0.1 to 0.0.0.0 so that it can connect from an
 
 ```
 sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+sudo systemctl restart mysql
 ```
 
 We need to create a new user in the mysql server which will be used to connect to this server from mysql client
@@ -86,7 +88,7 @@ Create the new user and grant him privileges with the commands below :
 ```
 CREATE USER 'onyeka'@'%' IDENTIFIED BY 'onyeka12345';
 
-GRANT ALL PRIVILEGES ON *.* TO 'onyeka'@'% WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'onyeka'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
 
